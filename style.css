@@ -2004,3 +2004,32 @@ strong {
     margin-left: auto;
   }
 }
+
+/* Corrige a palavra "Desenvolvimento" na tela inicial */
+
+.intro-title span {
+  display: inline-block;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  .intro-title {
+    font-size: clamp(2.6rem, 13vw, 4.2rem);
+  }
+
+  .intro-title span {
+    font-size: 0.78em;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 380px) {
+  .intro-title {
+    font-size: 2.45rem;
+  }
+
+  .intro-title span {
+    font-size: 0.72em;
+  }
+}
